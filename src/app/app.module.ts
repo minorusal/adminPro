@@ -9,7 +9,7 @@ import { PagesModule } from './pages/pages.module';
 
 // Temporal
 
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 // Servicios
 
@@ -31,7 +31,9 @@ import { RegisterComponent } from './login/register.component';
     BrowserModule,
     APP_ROUTES,
     PagesModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    ServiceModule
   ],
   providers: [ServiceModule],
   bootstrap: [AppComponent]
