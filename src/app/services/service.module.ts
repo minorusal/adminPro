@@ -9,7 +9,9 @@ import {
   SharedService,
   UsuarioService,
   LoginGuardGuard,
-  SubirArchivoService
+  SubirArchivoService,
+  HospitalService,
+  MedicoService
  } from './service.index';
 
 
@@ -18,14 +20,16 @@ import {
     CommonModule,
     HttpClientModule
   ],
-  providers:[
+  providers: [
     SettingsService,
     SidebarService,
     SharedService,
     UsuarioService,
     LoginGuardGuard,
     SubirArchivoService,
-    ModalUploadService
+    ModalUploadService,
+    HospitalService,
+    MedicoService
   ],
   declarations: []
 })
