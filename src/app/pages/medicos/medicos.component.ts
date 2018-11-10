@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Medico } from '../../models/medico.model';
 import { MedicoService } from '../../services/medico/medico.service';
-import { Subscriber } from 'rxjs';
 
 @Component({
   selector: 'app-medicos',
@@ -31,6 +30,11 @@ export class MedicosComponent implements OnInit {
     }
     this._medicosService.buscarMedicos(termino)
     .subscribe(medicos => this.medicos = medicos);
+  }
+
+  borrarMedico( medico: Medico) {
+    this._medicosService.borrarMedico(medico._id)
+    .subscribe( () => this.cargarMedicos());
   }
 
 }
