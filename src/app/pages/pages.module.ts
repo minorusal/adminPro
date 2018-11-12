@@ -30,7 +30,7 @@ import { MedicoComponent } from './medicos/medico.component';
 
 @NgModule({
     declarations: [
-        PagesComponent,
+        // PagesComponent,
         DashboardComponent,
         ProgressComponent,
         Graficas1Component,
@@ -41,7 +41,7 @@ import { MedicoComponent } from './medicos/medico.component';
         RxjsComponent,
         ProfileComponent,
         UsuariosComponent,
-        ModalUploadComponent,
+        // ModalUploadComponent,
         BusquedaComponent,
         HospitalesComponent,
         MedicosComponent,

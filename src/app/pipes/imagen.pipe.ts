@@ -77,4 +77,4 @@ export class ImagenPipe implements PipeTransform {
 //     return url;
 //   }
 
-// }
+}
